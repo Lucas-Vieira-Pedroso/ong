@@ -1,56 +1,76 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Formulario de adoção</h1>
 
     <form id="formAdocao">
-
-            <label for="nome">Nome</label>
+        <div class="center">
+            <div class="amarelo">
+                <label for="nome">Nome</label>
                 <input type="text" id="nome" placeholder="digite seu nome" required>
-        <br>
-            <label for="idade">idade</label>
+            </div>
+            <div class="amarelo">
+                <label for="idade">idade</label>
                 <input type="number" id="idade" placeholder="digite sua idade">
-        <br>
-            <label for="cpf">cpf</label>
+            </div>
+            <div class="amarelo">
+                <label for="cpf">cpf</label>
                 <input type="text" id="cpf" placeholder="digite seu cpf">
-        <br>
-            <label for="email">email</label>
+            </div>
+            <div class="amarelo">
+                <label for="email">email</label>
                 <input type="text" id="email" placeholder="digite seu email">
-        <br>
-            <label for="moradia">moradia</label>
+            </div>
+            <div class="amarelo">
+                <label for="moradia">moradia</label>
                 <select name="modaria" id="moradia">
                     <option value="" disabled selected>Selecione</option>
                     <option value="casa">casa</option>
                     <option value="apartamento">apartamento</option>
                 </select>
-        <br>
-            <label for="quintal">Possui Quintal</label>
+            </div>
+            <div class="amarelo">
+                <label for="quintal">Possui Quintal</label>
                 <input type="radio" name="quintal" value="sim">sim
                 <input type="radio" name="quintal" value="nao">Não
-        <br>
-            <label for="pets">Você já teve algum pet</label>
+            </div>
+            <div class="amarelo">
+                <label for="pets">Você já teve algum pet</label>
                 <input type="radio" name="pets" value="sim">sim
                 <input type="radio" name="pets" value="nao">Não
-        <br>
-            <label for="tempo">quanto tempo o pet ficara sozinho</label>
+            </div>
+            <div class="amarelo">
+                <label for="tempo">quanto tempo o pet ficara sozinho</label>
                 <input type="number" id="tempo" placeholder="digite o tempo">
-        <br>
-            <label for="motivo">qual o motivo da adoção</label>
+            </div>
+            <div class="amarelo">
+                <label for="motivo">qual o motivo da adoção</label>
                 <textarea name="motivo" id="motivo"></textarea>
-        <br>
-            <label for="termo">aceite os termos de responsabilidade</label>
-            <input type="checkbox">
-
-
-
-
-        <br>
-        <button type="submit">Enviar</button>
+            </div>
+            <div class="amarelo">             
+                <label for="termo">aceite os termos de responsabilidade</label>
+                <input type="checkbox">
+            </div>
+            <div class="amarelo">
+                <label for="telefone">Telefone</label>
+                <input type="number" id="telefone" placeholder="xxxxxxxxxxx">
+            </div>
+            <div class="amarelo">
+                <label for="email">cidade</label>
+                <input type="text" id="cidade" placeholder="Ex: Joinville">
+            </div>
+            <br>
+            <div class="bt">
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
     </form>
 
     <div id="resultado"></div>
@@ -58,4 +78,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -9,9 +9,12 @@ document.getElementById("formAdocao").addEventListener("submit", function (e){
     let quintal = document.querySelector('input[name="quintal"]:checked');
     let tempo = document.getElementById("tempo").value;
     let motivo = document.getElementById("motivo").value;
+    let telefone = document.getElementById("telefone").value;
+    let cidade = document.getElementById("cidade").value;
 
     if(nome.length < 3) return alert("Nome Inválido");
     if(idade < 18) return alert("Você ainda não pode adotar um cachorro");
+    if(telefone.length < 8) return alert("Numero de telefone inválido");
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: " + nome;
 });
