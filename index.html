@@ -22,28 +22,33 @@
             </div>
             <div class="amarelo">
                 <label for="cpf">cpf</label>
-                <input type="text" id="cpf" placeholder="digite seu cpf">
+                <input type="text" id="cpf" placeholder="digite seu cpf"  required>
             </div>
             <div class="amarelo">
                 <label for="email">email</label>
-                <input type="text" id="email" placeholder="digite seu email">
+                <input type="email" id="email" placeholder="digite seu email">
             </div>
             <div class="amarelo">
                 <label for="moradia">moradia</label>
-                <select name="modaria" id="moradia">
+                <select name="modaria" id="moradia" required>
                     <option value="" disabled selected>Selecione</option>
                     <option value="casa">casa</option>
                     <option value="apartamento">apartamento</option>
                 </select>
             </div>
+            <div id="permissaoap" class="amarelo hidden">
+                <label for="permite">O apartamento permite animais?</label>
+                <input type="radio" name="permite" value="sim" required>sim
+                <input type="radio" name="permite" value="nao">Não
+            </div>
             <div class="amarelo">
                 <label for="quintal">Possui Quintal</label>
-                <input type="radio" name="quintal" value="sim">sim
+                <input type="radio" name="quintal" value="sim" required>sim
                 <input type="radio" name="quintal" value="nao">Não
             </div>
             <div class="amarelo">
                 <label for="pets">Você já teve algum pet</label>
-                <input type="radio" name="pets" value="sim">sim
+                <input type="radio" name="pets" value="sim" required>sim
                 <input type="radio" name="pets" value="nao">Não
             </div>
             <div class="amarelo">
@@ -55,7 +60,7 @@
                 <textarea name="motivo" id="motivo"></textarea>
             </div>
             <div class="amarelo">             
-                <label for="termo">aceite os termos de responsabilidade</label>
+                <label for="termo">aceite os termos de <a href="https://docs.google.com/document/d/1DtND1SEA4inbf4j3lgAw-JpNwGkvpeeN6Yrwl04Ss-U/edit?usp=sharing">responsabilidade</a></label>
                 <input type="checkbox">
             </div>
             <div class="amarelo">
@@ -64,7 +69,7 @@
             </div>
             <div class="amarelo">
                 <label for="email">cidade</label>
-                <input type="text" id="cidade" placeholder="Ex: Joinville">
+                <input type="text" id="cidade" placeholder="Ex: Joinville" required>
             </div>
             <br>
             <div class="bt">
