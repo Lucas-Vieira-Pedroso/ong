@@ -11,11 +11,14 @@ document.getElementById("formAdocao").addEventListener("submit", function (e){
     let motivo = document.getElementById("motivo").value;
     let telefone = document.getElementById("telefone").value;
     let cidade = document.getElementById("cidade").value;
+    let pets = document.getElementById('input[name="pets"]:checked');
 
     if(nome.length < 3) return alert("Nome Inválido");
     if(idade < 18) return alert("Você ainda não pode adotar um cachorro");
     if(telefone.length < 8) return alert("Numero de telefone inválido");
     if(motivo.length < 10) return alert("Melhore o motivo");
+    if(tempo >= 8) return alert("Você tem muito pouco tempo para o seu pet");
+    if(pets.value === "sim")
 
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: " + nome;
