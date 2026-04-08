@@ -22,11 +22,22 @@ document.getElementById("formAdocao").addEventListener("submit", function (e){
 });
 const moradia = document.getElementById("moradia");
 const permissaoap = document.getElementById("permissaoap");
+const permissaocasa = document.getElementById("permissaocasa");
+const quintals = document.getElementById("quintals");
+const quintaln = document.getElementById("quintaln");
+
 function sim(){
     if(moradia.value === "apartamento"){
         permissaoap.classList.remove("hidden");      
     } else {
         permissaoap.classList.add("hidden");
     }
+    if(moradia.value === "casa" && quintals.checked){
+        permissaocasa.classList.remove ("hidden");
+    } else {
+        permissaocasa.classList.add("hidden");
+    }
 }
 moradia.addEventListener("change", sim);
+quintals.addEventListener("cange", sim);
+quintaln.addEventListener("cange", sim);
