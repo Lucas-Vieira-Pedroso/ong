@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +8,9 @@
 
 <body>
     <h1>Formulario de adoção</h1>
+    <div>
+        <img id="cachorro" src="assets/4ea80c752c075845bcd355f253fe0975.jpg" alt="">
+    </div>
 
     <form id="formAdocao">
         <div class="center">
@@ -38,14 +40,20 @@
             </div>
             <div id="permissaoap" class="amarelo hidden">
                 <label for="permite">O apartamento permite animais?</label>
-                <input type="radio" name="permite" value="sim" required>sim
-                <input type="radio" name="permite" value="nao">Não
+                <input type="radio" name="permites" value="sim" required>sim
+                <input type="radio" name="permiten" value="nao">Não
             </div>
             <div id="permissaocasa" class="amarelo">
                 <label for="quintal">Possui Quintal: </label>
-                <input type="radio" name="quintals" value="sim" required> sim
-                <input type="radio" name="quintaln" value="nao"> nao
+                <input type="radio" name="quintals" value="true" required> sim
+                <input type="radio" name="quintaln" value="false"> nao
             </div>
+            <div class="amarelo">
+                <label for="seguro">é seguro: </label>
+                <input type="radio" name="seguros" value="sim" required> sim
+                <input type="radio" name="seguron" value="nao"> nao
+            </div>
+
             <div id="permissaocasa" class="amarelo hidden">
                 <label for="seguro">O quintal é seguro</label>
                 <input type="radio" name="seguros" value="sim" required> sim

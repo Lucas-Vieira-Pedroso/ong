@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(91, 91, 143);
+    background-image:url(assets/Design\ sem\ nome.png);
 }
 .amarelo{
     background-color: rgb(72, 153, 86);
@@ -25,4 +25,11 @@ body{
 }
 .hidden{
     display: none;
+}
+#cachorro{
+    background-color: green;
+    border: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    position:absolute;
 }
