@@ -24,6 +24,7 @@ document.getElementById("formAdocao").addEventListener("submit", function (e){
 
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome:" + nome + " " +c;
+    alert("Cadastro realizado com sucesso!<br>" + "Nome:" + nome + " " +c);
 });
 const moradia = document.getElementById("moradia");
 const permissaoap = document.getElementById("permissaoap");
