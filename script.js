@@ -19,17 +19,17 @@ document.getElementById("formAdocao").addEventListener("submit", function (e){
     if(telefone.length < 8) return alert("Numero de telefone inválido");
     if(motivo.length < 10) return alert("Melhore o motivo");
     if(tempo >= 8) return alert("Você tem muito pouco tempo para o seu pet");
-    if(pets.value === "sim") return (c = "")
+    if(pets.value === "sim") return (c = "");
     else (c = "poderá ter acompanhamento com a ONG");
 
 
-    document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: " + nome;
+    document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome:" + nome + " " +c;
 });
 const moradia = document.getElementById("moradia");
 const permissaoap = document.getElementById("permissaoap");
 const permissaocasa = document.getElementById("permissaocasa");
-const quintals = document.getElementById("quintals").value;
-const quintaln = document.getElementById("quintaln");
+const quintal = document.getElementById("quintal");
+
 
 function sim(){
     if(moradia.value === "apartamento"){
@@ -44,5 +44,3 @@ function sim(){
     }
 }
 moradia.addEventListener("change", sim);
-quintals.addEventListener("change", sim);
-quintaln.addEventListener("change", sim);
